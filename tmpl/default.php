@@ -16,7 +16,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 	<ul>
 	<?php foreach($contractor as $item): 
             if(isset($item->name)):?>
-		<li><a href="index.php?option=com_drugstories&contractor_id=<?=$item->contractor_id; ?>" ><?=$item->name; ?></a></li>
+		<li><a href="index.php?option=com_drugstories&view=drugstories&contractor_id=<?=$item->contractor_id; ?>" ><?=$item->name; ?></a></li>
 	<?php 
             endif;
         endforeach; ?>
